@@ -22,4 +22,4 @@ const Resturant = () => {
             </>);
 };
 
-export default Resturant;   
+export default Resturant;
