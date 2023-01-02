@@ -7,26 +7,30 @@ const MenuCard = ({ menuData }) => {
       <section className="main-card--container">
         {menuData.map((currEle) => {
           // console.log(currEle.image);
+
+          // Destructuring ---- IMPORTANT CONCEPT
+          const {id, name, category, image, description} = currEle;
+
           return (
             <>
-              <div className="card-container" key={currEle.id}>
+              <div className="card-container" key={id}>
                 <div className="card ">
                   <div className="card-body">
                     <span className="card-number card-circle subtle">
-                      {currEle.id}
+                      {id}
                     </span>
                     <span className="card-author subtle">
-                      {currEle.category}
+                      {category}
                     </span>
-                    <h2 className="card-title">{currEle.name}</h2>
+                    <h2 className="card-title">{name}</h2>
                     <span className="card-description subtle">
-                      {currEle.description}
+                      {description}
                     </span>
                     <div className="card-read">Read</div>
                   </div>
 
                   <img
-                    src={currEle.image}
+                    src={image}
                     alt="images"
                     className="card-media"
                   />
