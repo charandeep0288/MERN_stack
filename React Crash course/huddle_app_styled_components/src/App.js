@@ -1,7 +1,4 @@
 import React from "react";
-// import UseState from "./components/Hooks/useState";
-// import UseEffect from "./components/Hooks/useEffect";
-// import UseReducer from "./components/Hooks/useReducer";
 
 import { ThemeProvider } from "styled-components";
 import { Container } from "./components/Styles/Container.styled";
@@ -18,12 +15,6 @@ const theme = {
 
 const App = () => {
   return (
-    <>
-      <>
-        {/* <UseState /> */}
-        {/* <UseEffect /> */}
-        {/* <UseReducer /> */}
-      </>
       <ThemeProvider theme={theme}>
         <>
           <GlobalStyle />
@@ -33,7 +24,6 @@ const App = () => {
           </Container>
         </>
       </ThemeProvider>
-    </>
   );
 };
 
